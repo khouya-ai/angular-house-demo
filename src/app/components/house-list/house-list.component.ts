@@ -5,10 +5,7 @@ import {NgForOf, NgIf} from '@angular/common';
 @Component({
   selector: 'app-house-list',
   templateUrl: './house-list.component.html',
-  imports: [
-    NgForOf,
-    NgIf
-  ],
+  standalone:false,
   styleUrls: ['./house-list.component.css']
 })
 export class HouseListComponent implements OnInit {
@@ -22,7 +19,7 @@ export class HouseListComponent implements OnInit {
 
   loadHouses(): void {
     this.houseService.getHouses().subscribe((data: House[]) => {
-      console.log(data);
+      console.log(data.length);
       this.houses = data
     });
   }

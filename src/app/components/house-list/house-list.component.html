@@ -3,22 +3,12 @@
 
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
     <div class="col" *ngFor="let house of houses">
-      <div class="card h-100 shadow-sm">
-        <img [src]="house.image" [alt]="house.name" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">{{ house.name }}</h5>
-        </div>
-        <div class="card-footer bg-transparent border-top-0">
-          <button class="btn btn-outline-danger" (click)="deleteHouse(house.id!)">
-            <i class="bi bi-trash"></i> Delete
-          </button>
-        </div>
-      </div>
+      <app-house-item [item]="house" (onDeleteHouse)="deleteHouse(house.id!)"></app-house-item>
     </div>
   </div>
 
   <!-- Show when no houses are available -->
-  <div class="text-center py-5" *ngIf="houses === []">
+  <div class="text-center py-5" *ngIf="houses.length === 0">
     <p class="text-muted">No houses available</p>
   </div>
 </div>
