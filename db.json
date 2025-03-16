@@ -1,0 +1,20 @@
+{
+  "houses": [
+    {
+      "name": "Acme Fresh Start Housing - Chicago",
+      "image": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg"
+    },
+    {
+      "name": "A113 Transitional Housing - Santa Monica",
+      "image": "https://angular.io/assets/images/tutorials/faa/brandon-griggs-wR11KBaB86U-unsplash.jpg"
+    },
+    {
+      "name": "Warm Beds Housing Support - Juneau",
+      "image": "https://angular.io/assets/images/tutorials/faa/i-do-nothing-but-love-lAyXdl1-Wmc-unsplash.jpg"
+    },
+    {
+      "name": "Homesteady Housing - Chicago",
+      "image": "https://angular.io/assets/images/tutorials/faa/ian-macdonald-W8z6aiwfi1E-unsplash.jpg"
+    }
+  ]
+}
