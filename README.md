@@ -11,8 +11,12 @@ git clone https://github.com/khouya-ai/angular-house-demo.git
 cd angular-house-demo\
 
 npm install --force
+or 
+npm install --legacy-peer-deps
 
 npm run start
+or 
+ng serve
 
 npm run start:server
 ```
