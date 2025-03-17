@@ -13,7 +13,8 @@ export class HouseItemComponent {
   @Output() onDeleteHouse: EventEmitter<number> = new EventEmitter<number>();
 
   deleteHouse(houseId:number){
-    this.onDeleteHouse.emit(houseId);
+    if(confirm("Are you sure you want to delete?"))
+      this.onDeleteHouse.emit(houseId);
 }
 
 }

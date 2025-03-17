@@ -11,7 +11,7 @@ import { HouseItemComponent } from './components/house-item/house-item.component
 
 const routes: Routes = [
   { path: '', redirectTo: 'list', pathMatch: 'full' },
-  { path: 'list', component: HouseListComponent },
+  { path: 'list', component: HouseListComponent, pathMatch: 'full'  },
   { path: 'add', component: HouseFormComponent },
 ];
 

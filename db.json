@@ -4,21 +4,6 @@
       "id": "1",
       "name": "Acme Fresh Start Housing - Chicago",
       "image": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg"
-    },
-    {
-      "id": "3",
-      "name": "Warm Beds Housing Support - Juneau",
-      "image": "https://angular.io/assets/images/tutorials/faa/i-do-nothing-but-love-lAyXdl1-Wmc-unsplash.jpg"
-    },
-    {
-      "id": "4",
-      "name": "Homesteady Housing - Chicago",
-      "image": "https://angular.io/assets/images/tutorials/faa/ian-macdonald-W8z6aiwfi1E-unsplash.jpg"
-    },
-    {
-      "id": "ce84",
-      "name": "Warm Beds Housing Support - Juneau",
-      "image": "https://angular.io/assets/images/tutorials/faa/i-do-nothing-but-love-lAyXdl1-Wmc-unsplash.jpg"
     }
   ]
 }
