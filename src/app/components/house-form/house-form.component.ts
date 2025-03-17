@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {House, HouseService} from '../../services/house.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-house-form',
@@ -10,13 +11,14 @@ import {House, HouseService} from '../../services/house.service';
 export class HouseFormComponent {
   house: House = { name: '', image: '' };
 
-  constructor(private houseService: HouseService) {}
+  constructor(private houseService: HouseService,private router: Router) {}
 
   addHouse(): void {
     if (this.house.name && this.house.image) {
       this.houseService.addHouse(this.house).subscribe(() => {
         this.house = { name: '', image: '' };
         alert('House added!');
+        this.router.navigate(['/']);
       });
     }
   }
